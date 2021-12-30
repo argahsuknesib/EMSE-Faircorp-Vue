@@ -1,0 +1,26 @@
+body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 18px;
+  color: #444;
+}
+
+table {
+  border: 10px solid #4276b9;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: #b542b9;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+td {
+  background-color: #f9f9f9;
+}
+th {
+  min-width: 120px;
+  padding: 10px 15px;
+}
