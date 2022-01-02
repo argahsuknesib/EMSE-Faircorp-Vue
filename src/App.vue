@@ -5,7 +5,9 @@
     <!-- <Building /> -->
     <!-- <Hello /> -->
     <!-- <Heater/> -->
-    <Developer/>
+    <!-- <Developer/> -->
+    <Weather/>
+    <!-- <Location/> -->
   </div>
 </template>
 
@@ -14,13 +16,17 @@
 // import Navigation from './components/Navigation.vue'
 // import Location from './components/Location.vue'
 // import Building from './components/Building.vue'
-// import Hello from './components/Hello.vue'\
-import Developer from './components/Developer.vue'
+// import Hello from './components/Hello.vue'
+// import Developer from './components/Developer.vue'
+// import Location from './components/Location.vue'
+import Weather from './components/Weather.vue'
 
 export default {
   name: 'App',
   components: {
-    Developer
+    Weather
+    // Location
+    // Developer
     // Hello
     // Building
     // Navigation,

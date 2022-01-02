@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 23.44rem;
-  width: 87%;
+  width: 100%;
   position: relative;
 }
 @media (min-width: 24em) {
