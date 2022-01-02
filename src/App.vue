@@ -1,25 +1,35 @@
 <template>
   <div id="app">
-    <Navigation/>
+    <!-- <Location/> -->
+    <!-- <Navigation/> -->
+    <!-- <Building /> -->
+    <!-- <Hello /> -->
     <!-- <Heater/> -->
+    <Developer/>
   </div>
 </template>
 
 <script>
 // import Heater from './components/Heater.vue'
-import Navigation from './components/Navigation.vue'
+// import Navigation from './components/Navigation.vue'
+// import Location from './components/Location.vue'
+// import Building from './components/Building.vue'
+// import Hello from './components/Hello.vue'\
+import Developer from './components/Developer.vue'
 
 export default {
   name: 'App',
   components: {
-    Navigation,
+    Developer
+    // Hello
+    // Building
+    // Navigation,
+    // Location,
     // Heater
   },
 
   data(){
-    title: "Kushagra Singh BISEN Faircorp App.",
-    tab : "Windows",
-    
+
   }
 }
 </script>

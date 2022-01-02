@@ -10,7 +10,10 @@
         </thead>
         <tbody>
             <tr v-for="values in this.building" v-bind:key="values.id">
-                
+                <td> {{values.id}}</td>
+                <td>{{values.name}}</td>
+                <td>{{values.temperature}}</td>
+                <td>{{values.rooms}}</td>
             </tr>
         </tbody>
     </table>
