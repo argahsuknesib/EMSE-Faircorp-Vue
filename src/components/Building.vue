@@ -1,5 +1,6 @@
 <template>
   <div class="building">
+      <h1>Faircorp - Building Table</h1>
     <table class="building">
         <thead>
             <tr>
@@ -13,7 +14,6 @@
                 <td> {{values.id}}</td>
                 <td>{{values.name}}</td>
                 <td>{{values.temperature}}</td>
-                <td>{{values.rooms}}</td>
             </tr>
         </tbody>
     </table>
@@ -35,8 +35,6 @@ export default {
                 "ID",
                 "Name",
                 "Temperature",
-                "Rooms",
-                "Windows"
             ],
         }
     },

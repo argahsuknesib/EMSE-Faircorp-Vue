@@ -1,5 +1,6 @@
 <template>
   <div class="heater">
+    <h1>Faircorp - Heater Table</h1>
     <table class="heater">
       <thead>
         <tr>
@@ -15,7 +16,6 @@
           <td>{{ values.power }}</td>
           <td>{{ values.heaterStatus }}</td>
           <td>{{values.roomName}}</td>
-          <td>{{values.room}}</td>
           <td>{{values.roomId}}</td>
         </tr>
       </tbody>
@@ -38,7 +38,6 @@ export default {
               "Power",
               "Heater Status",
               "Room Name",
-              "Room",
               "Room ID"
           ],
       }

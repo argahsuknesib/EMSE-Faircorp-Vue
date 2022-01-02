@@ -1,12 +1,14 @@
 <template>
   <div id="app">
+<!-- <h1>Hello, this is Kushagra</h1> -->
+<router-view></router-view>
     <!-- <Location/> -->
     <!-- <Navigation/> -->
     <!-- <Building /> -->
     <!-- <Hello /> -->
     <!-- <Heater/> -->
     <!-- <Developer/> -->
-    <Weather/>
+    <!-- <Weather/> -->
     <!-- <Location/> -->
   </div>
 </template>
@@ -19,12 +21,12 @@
 // import Hello from './components/Hello.vue'
 // import Developer from './components/Developer.vue'
 // import Location from './components/Location.vue'
-import Weather from './components/Weather.vue'
+// import Weather from './components/Weather.vue'
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Weather
+    // Weather
     // Location
     // Developer
     // Hello
@@ -34,10 +36,8 @@ export default {
     // Heater
   },
 
-  data(){
-
-  }
-}
+  data() {},
+};
 </script>
 
 <style>

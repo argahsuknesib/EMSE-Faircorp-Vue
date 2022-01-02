@@ -1,5 +1,6 @@
 <template>
     <div class="window">
+        <h1>Faircorp - Window Table</h1>
         <table class = "heater">
             <thead>
                 <tr>
@@ -9,11 +10,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="values in this.heaters" v-bind:key = "values.id">
+                <tr v-for="values in this.windows" v-bind:key = "values.id">
                     <td>{{values.id}}</td>
                     <td>{{values.name}}</td>
                     <td>{{values.windowStatus}}</td>
-                    <td>{{values.room}}</td>
                     <td>{{values.roomName}}</td>
                     <td>{{values.roomId}}</td>
                 </tr>
@@ -36,7 +36,6 @@ export default {
                 "ID",
                 "Name",
                 "Window Status",
-                "Room",
                 "Room Name",
                 "Room ID"
             ],

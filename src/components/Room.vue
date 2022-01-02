@@ -1,5 +1,6 @@
 <template>
     <div class="room">
+        <h1>Faircorp - Room Table</h1>
         <table class = "room">
             <thead>
                 <tr>
@@ -13,8 +14,10 @@
                     <td>{{values.id}}</td>
                     <td>{{values.floor}}</td>
                     <td>{{values.name}}</td>
-                    <td>{{values.currentTemperatures}}</td>
-                    <td>{{values.targetTemperatures}}</td>
+                    <td>{{values.currentTemperature}}</td>
+                    <td>{{values.targetTemperature}}</td>
+                    <td>{{values.noOfOpenWindow}}</td>
+                    <td>{{values.noOfOnHeater}}</td>
                 </tr>
             </tbody>
         </table>
@@ -37,7 +40,8 @@ export default {
                 "Name",
                 "Current Temperature",
                 "Target Temperature",
-                "Heaters"
+                "Open Windows",
+                "On Heaters"
             ],
         }
     },
