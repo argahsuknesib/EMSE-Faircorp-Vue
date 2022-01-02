@@ -1,16 +1,25 @@
 <template>
   <div id="app">
-    <Heater/>
+    <Navigation/>
+    <!-- <Heater/> -->
   </div>
 </template>
 
 <script>
-import Heater from './components/Heater.vue'
+// import Heater from './components/Heater.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    Heater
+    Navigation,
+    // Heater
+  },
+
+  data(){
+    title: "Kushagra Singh BISEN Faircorp App.",
+    tab : "Windows",
+    
   }
 }
 </script>

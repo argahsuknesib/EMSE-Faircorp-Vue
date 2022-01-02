@@ -1,6 +1,6 @@
 <template>
   <div class="heater">
-    <table class="table">
+    <table class="heater">
       <thead>
         <tr>
           <th v-for="key in columns" v-bind:key="key">
@@ -9,11 +9,15 @@
         </tr>
       </thead>
       <tbody>
-          <tr v-for="values in this.heaters" v-bind:key="values.id">
-              <td>{{ values.id }}</td>
-              <td>{{ values.name }}</td>
-              <td>{{ values.power}}</td>
-          </tr>
+        <tr v-for="values in this.heaters" v-bind:key="values.id">
+          <td>{{ values.id }}</td>
+          <td>{{ values.name }}</td>
+          <td>{{ values.power }}</td>
+          <td>{{ values.heaterStatus }}</td>
+          <td>{{values.roomName}}</td>
+          <td>{{values.room}}</td>
+          <td>{{values.roomId}}</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -25,28 +29,25 @@ import { API_KUSHAGRA } from "../config";
 
 export default {
   name: "heater",
-  props: ["room"],
   data() {
-    return {
-      heaters: [],
-      columns: [
-        "ID",
-        "Name",
-        "Power",
-        "Heater Status",
-        "Room Name",
-        "Room ID",
-        "Room",
-      ],
-      key: "",
-    };
+      return {
+          heaters: [],
+          columns: [
+              "ID",
+              "Name",
+              "Power",
+              "Heater Status",
+              "Room Name",
+              "Room",
+              "Room ID"
+          ],
+      }
   },
-
-  async function() {
-    let response = await axios.get(`${API_KUSHAGRA}/api/heater`);
-    this.heaters = response.data;
-    heaters = this.heaters;
-  },
+  created : async function(){
+      let response = await axios.get(`${API_KUSHAGRA}/api/heater`);
+      let heaters = response.data;
+      this.heaters = heaters;
+  }
 };
 </script>
 
