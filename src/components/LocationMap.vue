@@ -1,5 +1,8 @@
 <template>
     <div>
+        <h1>
+        Location Map!
+        </h1>
         <div style="max-width: 800px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between">
             <div>
                 <h1>Your coordinates:</h1>
