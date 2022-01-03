@@ -13,7 +13,7 @@
 5. Home
 6. Location Map
 7. Room
-8. Weather (the API is very unstable, please read the code)
+8. Weather (the API is unstable, please read the code and add your OpenWeather API to check)
 9. Window
 
 ## Dependencies 

@@ -26,13 +26,15 @@
             </button>
           </td>
 
-        <td>
-
-        <button type="button" class="btn p-2 btn-danger me-2" v-on:click="deleteWindow">Delete window</button>
-            
-
-        </td>
-
+          <td>
+            <button
+              type="button"
+              class="btn p-2 btn-danger me-2"
+              v-on:click="deleteWindow"
+            >
+              Delete window
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -48,7 +50,15 @@ export default {
   data() {
     return {
       windows: [],
-      columns: ["ID", "Name", "Window Status", "Room Name", "Room ID", "Open Window", "Delete Window"],
+      columns: [
+        "ID",
+        "Name",
+        "Window Status",
+        "Room Name",
+        "Room ID",
+        "Open Window",
+        "Delete Window",
+      ],
     };
   },
   created: async function () {
@@ -57,15 +67,17 @@ export default {
     this.windows = windows;
   },
   methods: {
-        async switchWindow() {
-      let response = await axios.put(`${API_KUSHAGRA}/api/windows/${this.window.id}/switch`);
+    async switchWindow() {
+      let response = await axios.put(
+        `${API_KUSHAGRA}/api/windows/${this.window.id}/switch`
+      );
       let updatedWindow = response.data;
-      this.$emit('window-updated', updatedWindow);
+      this.$emit("window-updated", updatedWindow);
     },
-    async deleteWindow(){
+    async deleteWindow() {
       await axios.delete(`${API_KUSHAGRA}/api/windows/${this.window.id}`);
-      location.reload()
-    }
+      location.reload();
+    },
   },
 };
 </script>

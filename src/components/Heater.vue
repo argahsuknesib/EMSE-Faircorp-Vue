@@ -15,8 +15,8 @@
           <td>{{ values.name }}</td>
           <td>{{ values.power }}</td>
           <td>{{ values.heaterStatus }}</td>
-          <td>{{values.roomName}}</td>
-          <td>{{values.roomId}}</td>
+          <td>{{ values.roomName }}</td>
+          <td>{{ values.roomId }}</td>
         </tr>
       </tbody>
     </table>
@@ -30,23 +30,16 @@ import { API_KUSHAGRA } from "../config";
 export default {
   name: "heater",
   data() {
-      return {
-          heaters: [],
-          columns: [
-              "ID",
-              "Name",
-              "Power",
-              "Heater Status",
-              "Room Name",
-              "Room ID"
-          ],
-      }
+    return {
+      heaters: [],
+      columns: ["ID", "Name", "Power", "Heater Status", "Room Name", "Room ID"],
+    };
   },
-  created : async function(){
-      let response = await axios.get(`${API_KUSHAGRA}/api/heater`);
-      let heaters = response.data;
-      this.heaters = heaters;
-  }
+  created: async function () {
+    let response = await axios.get(`${API_KUSHAGRA}/api/heater`);
+    let heaters = response.data;
+    this.heaters = heaters;
+  },
 };
 </script>
 
